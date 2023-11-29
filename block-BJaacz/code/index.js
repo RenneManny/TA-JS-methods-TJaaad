@@ -3,29 +3,53 @@
 /*
   Create a function named addTwo which accepts a number, adds 2 to the number and return the new value.
 */
+function addTwo(number){
+  return number+2;
+}
+addTwo(10);
 
 /*
   Create a function named addThree which accepts a number, adds 3 to the number and return the new value.
 */
-
+function addThree(number){
+  return number+3;
+}
+addTwo(10);
 /*
   Create a function named addFive which accepts a number, adds 5 to the number and return the new value.
 */
-
+function addFive(number){
+  return number+5;
+}
+addTwo(10);
 /*
   Create a function named addTwoToArray which accepts:
     - An array of numbers
     - Returns a new array where 2 is added to each element
-    - While doing so use the funciton addTwo
+    - While doing so use the function addTwo
 */
-
+function addTwoToArray(arr,fun){
+  let result=[];
+ for(let i=0;i<arr.length;i++){
+result.push(fun(arr[i]));
+ }
+ return result;
+}
+addTwoToArray([10,12,14,16],addTwo);
 /*
   Create a function named addThreeToArray which accepts:
     - an array of numbers
-    - aeturns a new array where 2 is added to each element
+    - returns a new array where 2 is added to each element
     - while doing so use the funciton addThree
 */
-
+function addThreeToArray(arr,fun){
+  let result2=[];
+ for(let i=0;i<arr.length;i++){
+result2.push(fun(arr[i]));
+ }
+ return result2;
+}
+addTwoToArray([10,12,14,16],addThree);
 /*
   Create a function named addFiveToArray which accepts:
     - an array of numbers
