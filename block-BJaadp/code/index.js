@@ -10,7 +10,7 @@ let persons = [
   { name: 'Courtney', grade: 15, sex: 'F' },
   { name: 'Jane', grade: 9, sex: 'F' },
   { name: 'John', grade: 17, sex: 'M' },
-  { name: 'Arya', grade: 14, sex: 'F' },
+  { name: 'Arya', grade: 14, sex: 'f' },
 ];
 
 // NOTE: Use reduce method whereever you can to solve this exercise:
