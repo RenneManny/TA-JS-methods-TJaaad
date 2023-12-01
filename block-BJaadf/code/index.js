@@ -1,25 +1,34 @@
-let fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
 
 // Add a new element ('Papaya') into fruits array at end
-fruits.push('Papaya');
+fruits.push("Papaya");
 // Remove the last element from fruits array
-
+fruits.pop();
 // Log the current length of fruits array
-
+fruits.length;
 // Remove the first element from fruits and log the value of fruits (use delete arr[0])
-
+delete fruits[0];
+console.log(fruits);
 // Log the element on index 0 and 1
-
+console.log(fruits[0], fruits[1]);
 // If the element at 0 index is undefined and index 1 is 'Banana' shift all the values to one lower index (use shift method)
-
+if (fruits[0] === 0 && fruits[1] === "Banana") {
+  fruits.shift();
+}
 // Add a new element to the start ('Guava') and shift the index of all other to one higher value
-
+fruits.unshift("Gauava");
 // Add a new element to the start ('Dragon Fruit') and shift the index of all other to one higher value
-
+fruits.unshift("Dragon Fruit");
 // Log true or false based on the value at index 0 and 1 is 'Dragon Fruit' and 'Guava' or not
 
-// Update the value of index 1 to `Pears`
+if (fruits[0] === "Dragon Fruit" && fruits[1] === "Gauava") {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
+// Update the value of index 1 to `Pears`
+fruits[1] = "Pears";
 // Add the 'Kiwi' and 'Lemon' to the index 1 and 2 and shift the other element to next index (use splice to add element)
 
 // Remove (slice) all the element from index 5
