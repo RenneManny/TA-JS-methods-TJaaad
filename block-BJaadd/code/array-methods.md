@@ -9,7 +9,7 @@ Go to this [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refere
 Only if you are done with step 1 you should go ahead.
 
 1. Practice it by yourself in console (2-3 times to understand)
-2. Data types of parameters
+2. Data types of parameters                                               
 3. Return value type
 4. Write three examples
 5. In your words what this method does.
@@ -34,8 +34,46 @@ Example:
    - No it does not mutate the original array
 
 2. `join`
+  - Parameter: seprator is used to specify how you want to seprate the elements of the array.
+   - Return: an array with joined string together but seprated by the seprator.
+```js
+let colors=["Green","blue","orange","black"];
+colors.join("'");
+let numbers =[1,2,3,4,5,6];
+numbers.join("/");
+let fruits=["Apple","Mango","Banana","Kiwi"];
+fruits.join("-");
+```
+ - `join` method is used to join the elements of the array seprated by the specific seprator.
+   - No it does not mutate the original array.
 3. `flat`
+  - Parameter: depth (integer).
+   - Return: a flattened array with the given depth.
+```js
+let arr1=[1,2,3,4,[5,6,7,8,[9,10,11]]];
+arr1.flat();
+let arr2=["apple","mango","banana",["kiwi","orange",["peach","gauva",["rasberry"]]]];
+arr2.flat(2);
+let arr3=["red","blue","maroon",["black","orange",["purple","diamondblack",["wheat"]]]];
+arr3.flat(3);
+
+`flat` method is used to flattened the nested arrray based on the depth which is specified.
+   - No it does not mutate the original array.
+```
 4. `push`
+- Parameter: the element or array to be pushed.
+   - Return: a new array with the updated value.
+   ```js
+   let arr11=[1,2,3,4,5,6];
+   arr11.push(7);
+   let arr22=["apple","mango","banana","pineapple"];
+   arr22.push("orange");
+   arr22.push(arr11);
+
+
+   
+   ```
+
 5. `indexOf`
 6. `lastIndexOf`
 7. `includes`
