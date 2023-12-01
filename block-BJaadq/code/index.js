@@ -4,7 +4,7 @@ function countAllPeople() {
   // your code goes here
 }
 
-function peopleByHouses() {
+function peopleByHouse() { (s)
   // your code goes here
 }
 
