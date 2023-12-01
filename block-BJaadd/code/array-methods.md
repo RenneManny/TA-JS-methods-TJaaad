@@ -69,10 +69,9 @@ arr3.flat(3);
    let arr22=["apple","mango","banana","pineapple"];
    arr22.push("orange");
    arr22.push(arr11);
-
-
-   
-   ```
+```
+- `push` method is used to add elements at the end of the array.
+   - Yes it mutates the original array.
 
 5. `indexOf`
 6. `lastIndexOf`
