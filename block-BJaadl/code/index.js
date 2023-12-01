@@ -19,7 +19,7 @@ let words = [
 
 // - Create a new array that contians words not starting with vowel.
 
-// - Create a new array that contianse words not ending with vowel
+// - Create a new array that contians words not ending with vowel
 
 let numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
